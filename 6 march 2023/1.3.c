@@ -15,9 +15,10 @@ int main(){
     scanf("%f %f", &x, &y);
     printf("What arithmetic operation do u want to perform, type in lowercase?\n");
     scanf("%s", o);
-    char op[2];
+    char op[3];
     strcat(op,&o[0]);
     strcat(op,&o[1]);
+    op[2]='\0';
     if(strcmp(op,"ad")==0){
     calc=add(x,y);}
     else if(strcmp(op,"su")==0){
